@@ -1,0 +1,39 @@
+# TREINAMENTO PENTAHOO - PDI:
+
+# 01) INPUTS
+    ## Arquivos Excel 2007+ :
+        >> Spread sheet type --> Excel 2007 XLSX (Apache POI)
+
+    ## Multiplos Arquivos Excel:
+        >> Spread sheet type --> Excel 2007 XLSX (Apache POI Streaming) 
+        >> Exclude Regular Expression --> ^count.+
+
+    ## XML
+        >> Get data from XML
+        >> Loop XPath --> Pegar o caminho que começa a descrever todos os campos, exemplo:
+            /deputados
+            /deputados/deputados ** Pegar a partir daqui, aonde todos possuem comum.
+            /deputados/deputados/ideCadastro
+            /deputados/deputados/codOrcamento
+            [...]
+            /deputados/deputados/email
+            /deputados/deputados/comissoes
+            /deputados/deputados/comissoes/titular
+            /deputados/deputados/comissoes/suplente
+
+    ## DATA GRID
+        >>Meta --> É a criação do campo da tabela
+        >>Data --> É a inserção de dados das colunas criadas no meta
+    
+    ## OBSERVAÇÕES:
+        ### POSTGRES
+            >> Com DBEAVER -->   Criar um banco de dados; Clicar com botão direito em cima dele, ir em "Tools" e "Execute Script"; Selecionar
+                                , por exemplo, arquivos_pg.sql
+
+# 02) OUTPUTS
+    ## EXCEL WRITER:
+        >>Importante: Apagar a extensão do final do arquivo, caso contrario, não será sobrescrito o arquivo e sim criado um novo, exemplo, "*.xlx.xls"
+
+    
+    
+
